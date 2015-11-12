@@ -2,7 +2,7 @@
 
 A small component using Angular2 showing personal dev links
 
-
+![screenshot](screenshot.png)
 
 ## Install
 
