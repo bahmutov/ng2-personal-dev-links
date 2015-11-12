@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ng2 personal dev links</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+      .personal-dev-links i.fa {
+        font-size: x-large;
+      }
+      .personal-dev-links a {
+        margin-right: 5px;
+        text-decoration: none;
+      }
+    </style>
+</head>
+
+<body>
+    <demo-app>Loading demo ...</demo-app>
+</body>
+
+<!-- ES6-related imports -->
+<script src="/node_modules/es6-shim/es6-shim.min.js"></script>
+<script src="/node_modules/systemjs/dist/system-csp-production.js"></script>
+
+<script>
+    //configure system loader
+    System.config({defaultJSExtensions: true});
+</script>
+<script src="/node_modules/angular2/bundles/angular2.min.js"></script>
+
+<script>
+    //bootstrap the Angular2 application
+    System.import('dist/demo').catch(console.log.bind(console));
+</script>
+
+</html>
