@@ -77,6 +77,9 @@ them from the outside like this
 
     <personal-dev-links [links]="whatever"></personal-dev-links>
 
+Notice we also have to declare all core components we are going to use in the template,
+like `NgIf`
+
 ## Install
 
 This is based on [ng2-play](https://github.com/pkozlowski-opensource/ng2-play) repo
