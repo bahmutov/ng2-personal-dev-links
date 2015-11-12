@@ -10,15 +10,15 @@ var _links: PersonalLinks = {
 };
 
 @Component({
-    selector: 'hello-app',
-    directives: [PersonalDevLinks],
-    template: `
-      <h2>Below are my personal dev links</h2>
-      <personal-dev-links [links]="links"></personal-dev-links>
-    `
+  selector: 'demo-app',
+  directives: [PersonalDevLinks],
+  template: `
+    <h2>Below are my personal dev links</h2>
+    <personal-dev-links [links]="links"></personal-dev-links>
+  `
 })
-export class HelloApp {
+export class DemoApp {
   links: PersonalLinks = _links;
 }
 
-bootstrap(HelloApp);
+bootstrap(DemoApp);
